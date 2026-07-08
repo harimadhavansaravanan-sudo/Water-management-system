@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">AquaCare</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="usage.html">Usage</a>
+      <a href="tips.html">Tips</a>
+      <a href="tracker.html">Tracker</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Daily Water Saving Tracker</h2>
+
+    <div class="card">
+      <label><input type="checkbox" class="task"> Turned off tap while brushing</label><br>
+      <label><input type="checkbox" class="task"> Used bucket instead of hose</label><br>
+      <label><input type="checkbox" class="task"> Reported a leak or waste</label><br>
+      <label><input type="checkbox" class="task"> Reused water for plants</label><br><br>
+      <button class="btn" onclick="saveTasks()">Complete Tasks</button>
+      <p id="trackerResult"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
